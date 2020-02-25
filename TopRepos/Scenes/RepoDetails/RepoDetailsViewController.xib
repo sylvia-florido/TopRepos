@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepoDetailsViewController" customModule="TopRepos" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n4A-vk-2oD">
+                    <rect key="frame" x="16" y="68" width="382" height="18"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 opened" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1u-kI-hlG">
+                            <rect key="frame" x="0.0" y="0.0" width="165.5" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 800 closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jf-u1-ulF">
+                            <rect key="frame" x="173.5" y="0.0" width="208.5" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jsq-tA-HBn">
+                    <rect key="frame" x="0.0" y="102" width="414" height="760"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n4A-vk-2oD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="5Bs-tq-H1u"/>
+                <constraint firstItem="Jsq-tA-HBn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8EE-YD-RlD"/>
+                <constraint firstItem="Jsq-tA-HBn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C3v-z7-bgy"/>
+                <constraint firstItem="n4A-vk-2oD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="I88-yA-ZXn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="n4A-vk-2oD" secondAttribute="trailing" constant="16" id="Mnw-jz-Q8k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jsq-tA-HBn" secondAttribute="bottom" id="n8A-hs-GuS"/>
+                <constraint firstItem="Jsq-tA-HBn" firstAttribute="top" secondItem="n4A-vk-2oD" secondAttribute="bottom" constant="16" id="sdY-x0-eyv"/>
+                <constraint firstItem="n4A-vk-2oD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vra-nU-kQr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
