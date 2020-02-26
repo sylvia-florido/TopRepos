@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorViewController" customModule="TopRepos" customModuleProvider="target">
+            <connections>
+                <outlet property="animationContainer" destination="2bi-dn-A1J" id="Qc6-OU-PJq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-co-6kz" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bi-dn-A1J">
+                            <rect key="frame" x="60" y="100" width="294" height="294"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2bi-dn-A1J" secondAttribute="height" multiplier="1:1" id="kZn-aR-EXj"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="tyR-Yf-YYg">
+                            <rect key="frame" x="20" y="454" width="374" height="255"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Algo deu errado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY5-tB-w3L">
+                                    <rect key="frame" x="95.5" y="0.0" width="183.5" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="8hF-vi-RyE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="5MY-Lb-j3b">
+                                    <rect key="frame" x="87" y="130" width="200" height="125"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFj-l7-yUp">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="48"/>
+                                            <color key="backgroundColor" red="0.95460695028305054" green="0.76063030958175659" blue="0.022519206628203392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="5u5-Hg-KtR"/>
+                                                <constraint firstAttribute="height" constant="48" id="i4V-Lk-HME"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <state key="normal" title="Tentar novamente">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="24"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tryAgain:" destination="-1" eventType="touchUpInside" id="v58-fi-1pM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QB-qc-KgB">
+                                            <rect key="frame" x="0.0" y="77" width="200" height="48"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="lbe-lI-EKY"/>
+                                                <constraint firstAttribute="height" constant="48" id="mT1-rA-QoY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <state key="normal" title="Tentar depois">
+                                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="24"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="tryLater:" destination="-1" eventType="touchUpInside" id="95s-ht-GV4"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="tyR-Yf-YYg" firstAttribute="top" secondItem="2bi-dn-A1J" secondAttribute="bottom" constant="60" id="0LR-IQ-GmQ"/>
+                        <constraint firstItem="2bi-dn-A1J" firstAttribute="leading" secondItem="2wZ-co-6kz" secondAttribute="leading" constant="60" id="GYU-VE-l8F"/>
+                        <constraint firstAttribute="trailing" secondItem="tyR-Yf-YYg" secondAttribute="trailing" constant="20" id="ceQ-2W-NBi"/>
+                        <constraint firstItem="tyR-Yf-YYg" firstAttribute="leading" secondItem="2wZ-co-6kz" secondAttribute="leading" constant="20" id="dZJ-mi-qsk"/>
+                        <constraint firstItem="2bi-dn-A1J" firstAttribute="top" secondItem="2wZ-co-6kz" secondAttribute="top" constant="100" id="gFT-0E-vB3"/>
+                        <constraint firstAttribute="trailing" secondItem="2bi-dn-A1J" secondAttribute="trailing" constant="60" id="o2W-Hj-xBK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2wZ-co-6kz" secondAttribute="bottom" id="bLB-kg-3Ds"/>
+                <constraint firstItem="2wZ-co-6kz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gJi-NM-P8T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2wZ-co-6kz" secondAttribute="trailing" id="hmb-Hr-5NA"/>
+                <constraint firstItem="2wZ-co-6kz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sFn-e7-2XV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

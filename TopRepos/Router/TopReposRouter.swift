@@ -38,4 +38,13 @@ class TopReposRouter {
         originController.navigationController?.pushViewController(controller, animated: true)
     }
     
+    static func showErrorScene(from viewController: UIViewController) {
+        let errorController = ErrorViewController()
+        if let viewController = viewController as? ErrorViewControllerDelegate {
+            errorController.delegate = viewController
+        }
+        viewController.present(errorController, animated: true, completion: nil)
+    }
+    
+    
 }
