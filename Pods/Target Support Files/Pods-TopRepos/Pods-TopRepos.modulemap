@@ -1,0 +1,6 @@
+framework module Pods_TopRepos {
+  umbrella header "Pods-TopRepos-umbrella.h"
+
+  export *
+  module * { export * }
+}
