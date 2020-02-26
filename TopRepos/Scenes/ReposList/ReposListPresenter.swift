@@ -11,6 +11,7 @@ import Foundation
 protocol ReposListPresenterProtocol {
     func presentReposList(_ repos: [Repo])
     func presentDetailsScene(with repo: Repo)
+    func presentActivityIndicator(_ animated: Bool)
 }
 
 class ReposListPresenter: ReposListPresenterProtocol {
@@ -30,4 +31,8 @@ class ReposListPresenter: ReposListPresenterProtocol {
         viewController?.showDetailsScene(with: repo)
     }
     
+    func presentActivityIndicator(_ animated: Bool) {
+        viewController?.displayActivityIndicator(animated)
+    }
+
 }

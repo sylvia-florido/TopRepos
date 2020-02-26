@@ -26,6 +26,7 @@ class ReposListInteractor: ReposListInteractorProtocol {
     // MARK: - ReposListInteractorProtocol
     func fetchRepos() {
         fetching = true
+        presenter?.presentActivityIndicator(true)
         GithubService.sharedInstance().getRepoByLanguage(language: "Swift", sort: "stars", page: String(nextPage)) { (repos, error) in
             if let repos = repos {
                 self.nextPage += 1
@@ -33,6 +34,7 @@ class ReposListInteractor: ReposListInteractorProtocol {
                 self.presenter?.presentReposList(self.repos)
             }
             self.fetching = false
+            self.presenter?.presentActivityIndicator(true)
         }
     }
     
