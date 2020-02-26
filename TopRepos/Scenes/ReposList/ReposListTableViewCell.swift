@@ -15,7 +15,11 @@ class ReposListTableViewCell: UITableViewCell {
     @IBOutlet weak var forksLabel: UILabel!
     @IBOutlet weak var starsLabel: UILabel!
     @IBOutlet weak var ownerNameLabel: UILabel!
-    @IBOutlet weak var ownerFullNameLabel: UILabel!
     @IBOutlet weak var ownerPhotoImageView: UIImageView!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView?.image = nil
+    }
     
 }
